@@ -6,28 +6,35 @@ const CPU = require('./cpu');
  * Process a loaded file
  */
 function processFile(content, cpu, onComplete) {
-    // Pointer to the memory address in the CPU that we're
-    // loading a value into:
+    // Pointer to the memory address in the CPU that we're loading a value into:
     let curAddr = 0;
     
     // Split the lines of the content up by newline
     const lines = content.split('\n');
 
     // Loop through each line of machine code
-
     for (let line of lines) {
 
         // !!! IMPLEMENT ME
+        // Hunt for a comment
+        const commentIndex = line.indexOf('#');
 
-        // Strip comments
+        // Strip comments: If a comment is found, cut off everything after the comment
+        if (commentIndex != -1) line = line.substr(0, commentIndex);
 
         // Remove whitespace from either end of the line
+        line = line.trim();
 
         // Ignore empty lines
+        if (line === '') continue;
 
         // Convert from binary string to numeric value
+        const binValue = parseInt(line, 2); // Base 2 == binary
 
+        // Okoay, we have a good value! Now we store it into memory:
+        // console.log(`storing ${vinValue}, ${line}`);
         // Store in the CPU with the .poke() function
+        cpu.poke(curAddr, binValue);
 
         // And on to the next one
         curAddr++;
