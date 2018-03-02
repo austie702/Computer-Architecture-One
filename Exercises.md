@@ -136,6 +136,6 @@ phone. If no one is available, any house plant will do.
     * Assembly code is the plain-text (more human-readable than machine) version of the machine code. This is accomplished using mnemonics for the actual instructions/registers/etc resources. Examples of this would include things like HLT (halt), JMP (jump), MULT (multiply), and plenty more. Unlike Machine Code, the CPU does not understand Assembly Code. 
 
   * Suggest the role that graphics cards play in machine learning:
-    * Reason # 1. GPUs are cheap as fuck compared to good CPUs. The cost of this was first proven a decade or more ago when two colleges built neural networks and one used CPUs costing something like $300,000. Then another school did it with GPUs for only $30,000. 10%.
+    * Reason # 1. GPUs are super inexpensive compared to good CPUs. The cost of this was first proven a decade or more ago when two colleges built neural networks and one used CPUs costing something like $300,000. Then another school did it with GPUs for only $30,000. 10%. *Edit Notes: Removed a curse word. I did copypasta from a private slack chat explaining it to someone else, then just used my explanation to them cause I liked it. Oops!  :)*
     * Reason # 2. The other is speed of trips. The CPU is like a Ferrari during a move. Sure it's faster, but it can't hold very much per trip and it's going to have to make a LOT of trips. The smarter mover would find a large truck to ship everything at once more slowly, but ultimately more quickly
     
